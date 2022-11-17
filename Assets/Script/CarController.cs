@@ -12,6 +12,7 @@ public class CarController : MonoBehaviour
     private float driftTime;
 
     private bool isCarGrounded;
+    private bool fastModeEnabled;
 
     [SerializeField] private float forwardSpeed;
     [SerializeField] private float backwardSpeed;
@@ -26,9 +27,19 @@ public class CarController : MonoBehaviour
 
     [SerializeField] Rigidbody sphereRigidbody;
 
+    private TrailRenderer[] trailRenderers;
+
     void Start()
     {
+        trailRenderers = GetComponentsInChildren<TrailRenderer>();
         sphereRigidbody.transform.parent = null;
+    }
+
+    public void EnableFastMode(){
+        fastModeEnabled = true;
+        foreach(TrailRenderer tr in trailRenderers){
+            tr.emitting = true;
+        }
     }
 
     // Update is called once per frame
@@ -39,18 +50,18 @@ public class CarController : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
         breaking = Input.GetKey(KeyCode.Space);
 
-        verticalInput *= verticalInput > 0 ? forwardSpeed : backwardSpeed;
-        if(breaking){
+        verticalInput *= verticalInput > 0 ? fastModeEnabled ? forwardSpeed : forwardSpeed / 3 : backwardSpeed;
+        if(breaking && fastModeEnabled) {
             verticalInput = 0;
             horizontalInput *= driftForce * driftTime/driftPotential;
             driftTime -= Time.deltaTime;
             driftTime = driftTime < 0 ? 0 : driftTime;
-        } else if(driftTime < driftPotential){
+        } else if(driftTime < driftPotential) {
             driftTime += Time.deltaTime;
         }
         transform.position = sphereRigidbody.transform.position;
-        if(driftTime > 0){
-            float newRotation = horizontalInput * turnSpeed * Time.deltaTime * Input.GetAxisRaw("Vertical");
+        if(driftTime > 0) {
+            float newRotation = horizontalInput * (fastModeEnabled ? turnSpeed : turnSpeed / 3) * Time.deltaTime * Input.GetAxisRaw("Vertical");
             transform.Rotate(0, newRotation, 0, Space.World);
         }
 

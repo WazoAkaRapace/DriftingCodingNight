@@ -6,8 +6,10 @@ public class CheckpointSpawner : MonoBehaviour
 {
     [SerializeField] public GameObject checkpointPrefab;
     [SerializeField] private ScoreManager scoreManager;
-
+    [SerializeField] private MusicManager musicManager;
     [SerializeField] private float resetTime;
+
+    [SerializeField] private CarController carController;
 
     private bool started = false;
 
@@ -36,7 +38,7 @@ public class CheckpointSpawner : MonoBehaviour
     }
 
     void SpawnRandomCheckpoint(){
-        lastCheckPoint = Instantiate(checkpointPrefab, new Vector3(Random.Range(-50, 50) , 0.5F, Random.Range(-50, 50)), Quaternion.identity);
+        lastCheckPoint = Instantiate(checkpointPrefab, new Vector3(Random.Range(-45, 45) , 0.5F, Random.Range(-45, 45)), Quaternion.identity);
         CheckPoint script = lastCheckPoint.GetComponent<CheckPoint>();
         script.setCallbackAction((Next));
     }
@@ -44,6 +46,8 @@ public class CheckpointSpawner : MonoBehaviour
     void Next(){
         if(!started){
             started = true;
+            carController.EnableFastMode();
+            musicManager.setDejaVu();
         }
         scoreManager.incrementScore();
         remainingTime = resetTime;
