@@ -27,6 +27,10 @@ public class ScoreManager : MonoBehaviour
         textScore.text = score.ToString();
     }
 
+    public float getScore(){
+        return score;
+    }
+
     public void UpdateTimer(float remaining){
         textTimer.text = remaining.ToString("0.00");
     }

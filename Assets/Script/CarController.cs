@@ -42,6 +42,13 @@ public class CarController : MonoBehaviour
         }
     }
 
+    public void DisableFastMode(){
+        fastModeEnabled = false;
+        foreach(TrailRenderer tr in trailRenderers){
+            tr.emitting = false;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

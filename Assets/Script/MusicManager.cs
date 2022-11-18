@@ -32,4 +32,12 @@ public class MusicManager : MonoBehaviour
         musicPlayer.Play();
     }
 
+    public void setVolume(float volume){
+        musicPlayer.volume = volume;
+    }
+
+    public float getVolume(){
+        return musicPlayer.volume;
+    }
+
 }
