@@ -26,6 +26,7 @@ public class CheckpointSpawner : MonoBehaviour
     private float remainingTime;
 
     private GameObject lastCheckPoint;
+    public GameObject[] checkpointSpawns;
 
     private float waitForScreen = 4;
 
@@ -71,7 +72,13 @@ public class CheckpointSpawner : MonoBehaviour
     }
 
     void SpawnRandomCheckpoint(){
-        lastCheckPoint = Instantiate(checkpointPrefab, new Vector3(Random.Range(-45, 45) , 0.5F, Random.Range(-45, 45)), Quaternion.identity);
+        //get all checkpoints
+        checkpointSpawns = GameObject.FindGameObjectsWithTag("CheckpointSpawn");
+        var spawnCount = checkpointSpawns.Length-1;
+        var spawn = Random.Range(0,spawnCount);
+       
+        lastCheckPoint = Instantiate(checkpointPrefab, checkpointSpawns[spawn].transform.position, Quaternion.identity);
+        Debug.Log("It here:"+lastCheckPoint.transform.position);
         CheckPoint script = lastCheckPoint.GetComponent<CheckPoint>();
         script.setCallbackAction((Next));
     }
