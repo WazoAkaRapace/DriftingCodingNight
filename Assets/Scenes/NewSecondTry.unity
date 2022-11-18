@@ -3312,6 +3312,7 @@ GameObject:
   - component: {fileID: 281134861}
   - component: {fileID: 281134863}
   - component: {fileID: 281134862}
+  - component: {fileID: 281134864}
   m_Layer: 0
   m_Name: House_World ap_0 (3)
   m_TagString: Untagged
@@ -3383,6 +3384,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281134860}
+  m_Mesh: {fileID: -5569740387866651663, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
+--- !u!64 &281134864
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281134860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -5569740387866651663, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
 --- !u!1 &290576810
 GameObject:
@@ -8910,6 +8925,7 @@ GameObject:
   - component: {fileID: 688033023}
   - component: {fileID: 688033025}
   - component: {fileID: 688033024}
+  - component: {fileID: 688033026}
   m_Layer: 0
   m_Name: House_World ap_0 (2)
   m_TagString: Untagged
@@ -8981,6 +8997,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688033022}
+  m_Mesh: {fileID: -5569740387866651663, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
+--- !u!64 &688033026
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688033022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -5569740387866651663, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
 --- !u!1 &696052296
 GameObject:
@@ -9071,6 +9101,7 @@ GameObject:
   - component: {fileID: 706019683}
   - component: {fileID: 706019685}
   - component: {fileID: 706019684}
+  - component: {fileID: 706019686}
   m_Layer: 0
   m_Name: House_3_World ap_0
   m_TagString: Untagged
@@ -9142,6 +9173,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706019682}
+  m_Mesh: {fileID: 7327296353889255845, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
+--- !u!64 &706019686
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706019682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7327296353889255845, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
 --- !u!1 &706662645
 GameObject:
@@ -10209,6 +10254,7 @@ GameObject:
   - component: {fileID: 762354352}
   - component: {fileID: 762354354}
   - component: {fileID: 762354353}
+  - component: {fileID: 762354355}
   m_Layer: 0
   m_Name: House_World ap_0 (1)
   m_TagString: Untagged
@@ -10280,6 +10326,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762354351}
+  m_Mesh: {fileID: -5569740387866651663, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
+--- !u!64 &762354355
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762354351}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -5569740387866651663, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
 --- !u!1 &769325998
 GameObject:
@@ -11284,6 +11344,7 @@ GameObject:
   - component: {fileID: 856807780}
   - component: {fileID: 856807782}
   - component: {fileID: 856807781}
+  - component: {fileID: 856807783}
   m_Layer: 0
   m_Name: House_3_World ap_0
   m_TagString: Untagged
@@ -11355,6 +11416,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856807779}
+  m_Mesh: {fileID: 7327296353889255845, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
+--- !u!64 &856807783
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856807779}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7327296353889255845, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
 --- !u!1 &858586317
 GameObject:
@@ -21144,7 +21219,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845447471}
-  m_LocalRotation: {x: 0.000000014901161, y: -0.000000006852188, z: 0.000000003321987, w: 1}
+  m_LocalRotation: {x: 0.000000014901161, y: 0.00000004779571, z: -0.000000023171676, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22437,6 +22512,7 @@ GameObject:
   - component: {fileID: 1950206624}
   - component: {fileID: 1950206626}
   - component: {fileID: 1950206625}
+  - component: {fileID: 1950206627}
   m_Layer: 0
   m_Name: House_3_World ap_0
   m_TagString: Untagged
@@ -22508,6 +22584,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950206623}
+  m_Mesh: {fileID: 7327296353889255845, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
+--- !u!64 &1950206627
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950206623}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7327296353889255845, guid: e20fd3898631ec445a2317d77e703d69, type: 3}
 --- !u!1 &1950431467
 GameObject:
@@ -23941,7 +24031,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030566605}
-  m_LocalRotation: {x: 0.22379805, y: -0.000000021945048, z: 0.0000000050390723, w: 0.97463554}
+  m_LocalRotation: {x: 0.22379804, y: 0.000000019294308, z: -0.0000000044304036, w: 0.97463554}
   m_LocalPosition: {x: 1.4728705, y: 4.514, z: -7.388394}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
